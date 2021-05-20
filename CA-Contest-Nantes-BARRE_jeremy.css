@@ -1,0 +1,159 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    font-family: "Lato" sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: white;
+    background-color: black;
+}
+
+.Menu {
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Menu:hover {
+    color: black;
+    background-color: white;
+}
+
+.parcours {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding:0.01em 16px;
+    padding-top:64px;
+    padding-bottom:64px;
+    text-align: center;
+}
+
+.bloc1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding:0 8px;
+    padding-top:32px;
+    padding-bottom:32px;
+    display:table;
+    clear:both;
+
+}
+
+.img {
+    width: 31%;
+    float: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding:0 8px;
+    
+}
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.page {
+    max-width: 2000px;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.test{
+    color:white;
+    background-color:black;
+    width: 100%;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    position: absolute;
+    z-index: 0;
+}
+
+.projet {
+    background-color: white;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+/*
+.bloc2 {}
+*/
+
+.contact {
+    padding: 0.01em 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.bloc3 {
+    font-family: "Lato" sans-serif;
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: center;
+    width: auto;
+    width: 30px;
+
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid grey;
+}
+
+
+
+span {
+    margin-left: 50px;
+}
+
+.fa {
+    width: 30px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
