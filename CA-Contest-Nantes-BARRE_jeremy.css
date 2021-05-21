@@ -11,10 +11,11 @@ h2 {
 .top {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     color: white;
+    box-shadow: 10px, 0, 0, black;
     background-color: black;
 }
 
@@ -38,9 +39,9 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding:0.01em 16px;
-    padding-top:64px;
-    padding-bottom:64px;
+    padding: 0.01em 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     text-align: center;
 }
 
@@ -48,12 +49,11 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding:0 8px;
-    padding-top:32px;
-    padding-bottom:32px;
-    display:table;
-    clear:both;
-
+    padding: 0 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: table;
+    clear: both;
 }
 
 .img {
@@ -61,12 +61,16 @@ h2 {
     float: left;
     padding-top: 32px;
     padding-bottom: 32px;
-    padding:0 8px;
-    
+    padding: 0 8px;
 }
 
-.margin-top {
-    margin-top: 16px;
+.titre {
+    color: white;
+    background-color: black;
+}
+
+.taille {
+    width: 60%;
 }
 
 .page {
@@ -77,83 +81,98 @@ h2 {
     text-align: center;
 }
 
-.test{
-    color:white;
-    background-color:black;
+.padding {
+    margin-top: 58.475px;
+}
+
+.noir {
+    color: white;
+    background-color: black;
     width: 100%;
     height: 500px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     z-index: 0;
 }
 
 .projet {
     background-color: white;
-    left: 0;
-    margin-top: auto;
-    margin-bottom: auto;
     max-width: 800px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0.01em 16px;
+    margin-top: 64px;
+    padding-bottom: 64px;
+    text-align: left;
     position: relative;
     z-index: 1;
 }
 
-
-
-
-/*
-.bloc2 {}
-*/
-
-.contact {
-    padding: 0.01em 16px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
-
-.bloc3 {
+.bloc2 {
     font-family: "Lato" sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     margin: 10px 0;
     text-align: center;
     width: auto;
-    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Competence{
+    width: auto;
+}
+.label {
+    color: red;
+    border: 1px solid black;
+    font-size: 1rem;
+    margin-left: 125px;
+    margin-right: 225px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: 5px 5px 5px black;
+}
 
+.contact {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0.01em 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: left;
+    float: center;
+    color: black;
 }
 
 p {
     text-align: center;
 }
 
-ul {
+.ulprojet {
     list-style-type: none;
     padding: 0;
     margin: 0;
     border: 1px solid grey;
 }
 
-ul li {
+.liprojet {
     padding: 8px 16px;
     border-bottom: 1px solid grey;
 }
-
-
 
 span {
     margin-left: 50px;
 }
 
-.fa {
-    width: 30px;
-}
-
 footer {
+    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
     font-size: 24px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
 }
