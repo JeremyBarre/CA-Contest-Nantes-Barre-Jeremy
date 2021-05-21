@@ -1,17 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*----Menu chargement / @keyframes----*/
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    margin: 0;
-    padding:0;
-}
-
-/* chargement */
 
 .loader {
     position: relative;
@@ -92,19 +92,40 @@ body {
     transition: opacity 0.4s ease-out;
 }
 
-/*----------------------*/
+/*----fin menu chargement / @keyframes----*/
+
+/*----Mise en forme 1ère partie----*/
+
+.page {
+    max-width: 2000px;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 40px;
     text-align: center;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    box-sizing: content-box;
-    box-shadow: 4px 3px 2px 1px black;
+    margin-top: 64px;
+    margin-bottom: 64px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
 }
 
 .top {
@@ -115,8 +136,11 @@ h2 {
     z-index: 3;
     left: 0;
     top: 0;
-    transform: tranlate(-50%,-50%);
+    transform: tranlate(-50%, -50%);
 }
+
+/*----transforme / Barre du menu----*/
+
 .Menu {
     display: inline-block;
     padding: 8px 16px;
@@ -134,7 +158,8 @@ h2 {
 .Menu:hover {
     color: black;
 }
-.Menu::before{
+
+.Menu::before {
     content: "";
     position: absolute;
     left: 0;
@@ -145,38 +170,73 @@ h2 {
     z-index: -1;
     transition: transform 0.5;
     transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.0,0.4,0.5);
+    transition-timing-function: cubic-bezier(0.5, 1.0, 0.4, 0.5);
 }
-.Menu1::before{
+
+.Menu1::before {
     transform: scaleX(0);
 }
-.Menu1:hover::before{
+
+.Menu1:hover::before {
     transform: scaleX(1);
 }
-.Menu2::before{
+
+.Menu2::before {
     transform: scaleX(0);
 }
-.Menu2:hover::before{
+
+.Menu2:hover::before {
     transform: scaleX(1);
 }
-.Menu3::before{
+
+.Menu3::before {
     transform: scaleX(0);
 }
-.Menu3:hover::before{
+
+.Menu3:hover::before {
     transform: scaleX(1);
 }
-.Menu4::before{
+
+.Menu4::before {
     transform: scaleX(0);
 }
-.Menu4:hover::before{
+
+.Menu4:hover::before {
     transform: scaleX(1);
 }
-.Menu5::before{
+
+.Menu5::before {
     transform: scaleX(0);
 }
-.Menu5:hover::before{
+
+.Menu5:hover::before {
     transform: scaleX(2);
 }
+
+/*----Fin transform / Barre du menu----*/
+
+/*----image/photo----*/
+
+.img {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 31%;
+    float: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding: 0 8px;
+}
+
+.titre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.taille {
+    width: 60%;
+}
+
+/*----Parcours----*/
 
 .parcours {
     font-family: Arial, Helvetica, sans-serif;
@@ -187,7 +247,6 @@ h2 {
     padding-bottom: 64px;
     text-align: center;
     position: relative;
-    
 }
 
 .bloc1 {
@@ -202,33 +261,7 @@ h2 {
     clear: both;
 }
 
-.img {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 31%;
-    float: left;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding: 0 8px;
-}
-
-.titre {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: black;
-}
-
-.taille {
-    width: 60%;
-}
-
-.page {
-    max-width: 2000px;
-    margin-top: 46px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
+/*----Projet----*/
 
 .noir {
     color: white;
@@ -244,34 +277,37 @@ h2 {
 .projet {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 0.01em 16px;
     margin-top: 64px;
     padding-bottom: 64px;
     text-align: left;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    overflow: auto;
 }
 
-.bloc2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 10px 0;
-    text-align: center;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+.ulprojet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
 }
+
+.liprojet {
+    padding: 8px 16px;
+    border-bottom: 1px solid grey;
+}
+
+/*----Compétence----*/
 
 .Competence {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 64px;
     padding: 17px;
     overflow: auto;
-    
 }
 
 .label {
@@ -288,10 +324,12 @@ h2 {
     background-color: black;
     display: flex;
 }
-progress{
-    width: 100%;
 
+progress {
+    width: 100%;
 }
+
+/*----contact----*/
 
 .contact {
     font-family: Arial, Helvetica, sans-serif;
@@ -307,21 +345,18 @@ progress{
     color: black;
 }
 
+.bloc2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.ulprojet {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid grey;
-}
-
-.liprojet {
-    padding: 8px 16px;
-    border-bottom: 1px solid grey;
+    text-align: justify;
 }
 
 span {
