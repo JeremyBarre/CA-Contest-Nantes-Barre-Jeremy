@@ -94,7 +94,7 @@ body {
 
 /*----fin menu chargement / @keyframes----*/
 
-/*----Mise en forme 1ère partie----*/
+/*----Mise en forme de la page----*/
 
 .page {
     max-width: 2000px;
@@ -267,11 +267,11 @@ h3 {
     color: white;
     background-color: black;
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    z-index: 0;
+    z-index: -2;
 }
 
 .projet {
@@ -283,22 +283,24 @@ h3 {
     padding: 0.01em 16px;
     margin-top: 64px;
     padding-bottom: 64px;
-    text-align: left;
-    position: absolute;
+    text-align: center;
+    position: relative;
     z-index: 1;
-    overflow: auto;
 }
 
 .ulprojet {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     border: 1px solid grey;
 }
 
 .liprojet {
     padding: 8px 16px;
     border-bottom: 1px solid grey;
+}
+
+img{
+    width: 30%;
+    display: block;
 }
 
 /*----Compétence----*/
@@ -308,6 +310,8 @@ h3 {
     margin-top: 64px;
     padding: 17px;
     overflow: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .label {
@@ -336,13 +340,12 @@ progress {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
-    padding: 0.01em 16px;
     padding-top: 64px;
     padding-bottom: 64px;
     text-align: left;
-    float: center;
+    display: block;
     color: black;
+    position: relative;
 }
 
 .bloc2 {
@@ -359,17 +362,18 @@ p {
     text-align: justify;
 }
 
-span {
-    margin-left: 50px;
-}
-
 footer {
     width: 100%;
     background-color: black;
-    color: #ffd700;
     text-align: center;
     font-size: 24px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+
+}
+
+footer:hover{
+    background: grey;
 }
